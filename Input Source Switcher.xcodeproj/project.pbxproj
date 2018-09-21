@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1309583121550CFC00EFCEF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309583021550CFC00EFCEF2 /* main.m */; };
+		1309583921550D9F00EFCEF2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309583821550D9F00EFCEF2 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		1309582D21550CFC00EFCEF2 /* Input Source Switcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Input Source Switcher"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1309583021550CFC00EFCEF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1309583821550D9F00EFCEF2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1309583921550D9F00EFCEF2 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				1309582F21550CFC00EFCEF2 /* Input Source Switcher */,
 				1309582E21550CFC00EFCEF2 /* Products */,
+				1309583721550D9F00EFCEF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				1309583021550CFC00EFCEF2 /* main.m */,
 			);
 			path = "Input Source Switcher";
+			sourceTree = "<group>";
+		};
+		1309583721550D9F00EFCEF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1309583821550D9F00EFCEF2 /* Carbon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
