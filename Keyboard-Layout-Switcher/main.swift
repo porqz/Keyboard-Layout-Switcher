@@ -14,7 +14,7 @@ let inputSources = TISCreateInputSourceList(nil, false).takeRetainedValue() as! 
 let keyboardLayouts = inputSources.map({ inputSource in WrappedInputSource(inputSource) }).filter { wrappedInputSource in
     // I’m not sure that both conditions are necessary
     wrappedInputSource.category == WrappedInputSourceCategory.keyboard &&
-        wrappedInputSource.type == WrappedInputSourceType.keyboardLayout
+    wrappedInputSource.type == WrappedInputSourceType.keyboardLayout
 }
 
 if CommandLine.arguments.count > 1 {
@@ -30,10 +30,10 @@ if CommandLine.arguments.count > 1 {
 print("Enabled keyboard layouts:")
 
 for (keyboardLayoutIndex, keyboardLayout) in keyboardLayouts.enumerated() {
-    let keyboardLayoutSelectedMark = keyboardLayout.isSelected ? "(selected)" : "          "
+    let keyboardLayoutSelectedMark = keyboardLayout.isSelected ? "(current)" : "         "
 
     // @TODO: print the string really formatted
     print("\(keyboardLayoutSelectedMark) \(keyboardLayoutIndex + 1). \(keyboardLayout.name)")
 }
 
-print("\nRun the application with a number above passed as an argument to select a layout.")
+print("\nRun the application with a number above passed as an argument to select a layout as current.")
