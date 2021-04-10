@@ -1,6 +1,6 @@
 # Keyboard Layout Switcher
 
-Keyboard Layout Switcher is a command-line application for macOS that allows to see enabled keyboard layouts (input sources) and make one as current.
+Keyboard Layout Switcher is a command-line application for macOS that allows to see enabled keyboard layouts (input sources) and select one as current.
 
 
 ## How to Use
@@ -25,3 +25,7 @@ In this example layout named “Russian - Ilya Birman Typography” will be sele
 ## Swift and Objective-C
 
 An actual version of the application is written in Swift, but you still may [see earlier and more simple version written in Objective-C](https://github.com/porqz/Keyboard-Layout-Switcher/blob/1d525456924d71cd4d7b18390c7baf1b690aab9b/Input%20Source%20Switcher/main.m).
+
+## License
+
+WTFPL
